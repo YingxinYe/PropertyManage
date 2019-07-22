@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/property_add_button_group"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:orientation="horizontal"
+    android:layout_below="@id/property_add_mortgage_info"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:id="@+id/property_view_list"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/light_blue_button_with_border"
+        android:padding="10dp"
+        android:text="View Property List" />
+
+    <Button
+        android:id="@+id/property_add_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/light_blue_button_with_border"
+        android:padding="10dp"
+        android:text="Add Property" />
+
+</LinearLayout>

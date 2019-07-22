@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrolling_property_add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/step1_text_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_light_blue"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/step1_instruction_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Step 1: Property Address"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/step1_instruction_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/step1_instruction_title"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/background_light_blue"
+            android:text="@string/step2_description"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/property_add_address_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/step1_text_box"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edittext_blue_blank_background"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/property_add_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/property_add_city_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/property_add_address_box"
+        android:layout_margin="10dp"
+        android:background="@drawable/edittext_blue_blank_background"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/property_add_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="City" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/property_add_state_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/property_add_city_box"
+        android:layout_margin="10dp"
+        android:background="@drawable/edittext_blue_blank_background"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/property_add_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="State/Province" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/property_add_zip_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/property_add_state_box"
+        android:layout_margin="10dp"
+        android:background="@drawable/edittext_blue_blank_background"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/property_add_zip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Zip/Postal Code"
+            android:inputType="number" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/property_add_country_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/property_add_zip_box"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/edittext_blue_blank_background"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/property_add_country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Country" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <LinearLayout
+        android:id="@+id/step2_text_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/property_add_country_box"
+        android:background="@color/background_light_blue"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/step2_instruction_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/property_add_country_box"
+            android:text="Step 2: Property Detail"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/step2_instruction_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/step2_instruction_title"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="Next we'd like some basic information about the property. If you input the Purchase Price then we can calculate your property Cash on Cash Invensted % correctly"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/step2_property_status_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/step2_text_box"
+        android:layout_marginTop="20dp"
+        android:text="Please choose your property status:"
+        android:textSize="18dp" />
+
+    <Spinner
+        android:id="@+id/property_status_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/step2_property_status_text"
+        android:layout_margin="10dp"
+        android:spinnerMode="dropdown" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/property_add_purchase_price_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/property_status_spinner"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/edittext_blue_blank_background"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/property_add_purchase_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Purchase Price"
+            android:inputType="number" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <LinearLayout
+        android:id="@+id/step3_text_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/property_add_purchase_price_box"
+        android:background="@color/background_light_blue"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/step3_instruction_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/property_add_purchase_price"
+            android:text="Step 3: Mortgage Information"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/step3_instruction_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/step3_instruction_title"
+            android:layout_marginTop="20dp"
+            android:text="If you property has a mortgage, then inputting its mortgage terms enables Housters to automatically set the principal, interest, and escrow amounts when you log mortgage payment transactions. If you made extra principal payments, then logging them as mortgage principal transactions will update the amortization schedule."
+            android:textSize="18dp" />
+    </LinearLayout>
+
+
+    <include
+        android:id="@+id/mortgage_radio_group"
+        layout="@layout/property_add_mortgage_radiogroup"></include>
+
+    <EditText
+        android:id="@+id/property_add_mortgage_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mortgage_radio_group"
+        android:layout_margin="10dp"
+        android:background="@drawable/edittext_blue_blank_background"
+        android:hint="Mortgage Name(Optional)"
+        android:padding="15dp" />
+
+    <include layout="@layout/property_add_button_group" />
+
+</RelativeLayout>

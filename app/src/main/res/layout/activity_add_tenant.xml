@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <include layout="@layout/tool_bar"/>
+    
+    <EditText
+        android:layout_marginTop="50dp"
+        android:id="@+id/edit_name"
+        style="@style/tenantEditText"
+        android:hint="Enter Tenant Name"/>
+    <EditText
+        android:id="@+id/edit_email"
+        style="@style/tenantEditText"
+        android:hint="Enter Tenant Email"/>
+    <EditText
+        android:id="@+id/edit_address"
+        style="@style/tenantEditText"
+        android:hint="Enter Tenant Address"/>
+    <EditText
+        android:id="@+id/edit_mobile"
+        style="@style/tenantEditText"
+        android:hint="Enter Tenant Mobile"/>
+    <EditText
+        android:id="@+id/edit_propertyid"
+        style="@style/tenantEditText"
+        android:hint="Enter Property Id"/>
+    <EditText
+        android:id="@+id/edit_landlordid"
+        style="@style/tenantEditText"
+        android:hint="Enter Landlord Id"/>
+
+    <Button
+        android:id="@+id/button_add_tenant"
+        style="@style/blueButton"
+        android:layout_marginTop="30dp"
+        android:text="Add Tenant"
+        />
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_light_blue">
+
+    <include layout="@layout/tool_bar"/>
+
+    <Button
+        android:id="@+id/tenant_button_add"
+        style="@style/buttonWithArrow"
+        android:text="Add New"/>
+    <Button
+        android:id="@+id/tenant_button_contact"
+        style="@style/buttonWithArrow"
+        android:text="Contact Tenants"/>
+    <Button
+        android:id="@+id/tenant_button_applicants"
+        style="@style/buttonWithArrow"
+        android:text="Applicants"/>
+
+</LinearLayout>

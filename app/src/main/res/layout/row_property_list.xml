@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:elevation="5dp">
+
+
+    <TextView
+        android:id="@+id/property_list_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/property_list_button_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/property_list_address">
+
+        <Button
+            android:id="@+id/property_list_view_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/light_blue_button_with_border"
+            android:padding="10dp"
+            android:text="View Detail" />
+
+        <Button
+            android:id="@+id/property_list_delete_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/light_blue_button_with_border"
+            android:drawableLeft="@drawable/ic_delete_black_24dp"
+            android:padding="10dp"
+            android:text="Delete Record" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/hide_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/property_list_button_group">
+
+        <TextView
+            android:id="@+id/property_list_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/property_list_price"
+            android:layout_below="@id/property_list_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_below="@id/property_list_price"
+            android:id="@+id/property_list_mortgage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

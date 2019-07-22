@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RadioGroup
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/step3_text_box"
+    android:layout_marginTop="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <RadioButton
+        android:id="@+id/no_mortgage_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I don't have mortgage on this property" />
+
+    <RadioButton
+        android:id="@+id/yes_mortgage_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I have mortgage, enter here" />
+</RadioGroup>

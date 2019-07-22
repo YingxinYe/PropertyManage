@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/very_light_grey"
+    tools:context=".view.fragments.PropertyListFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/property_list_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/property_list_add_property_button"></android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/property_list_add_property_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/light_blue_button_with_border"
+        android:layout_alignParentBottom="true"
+        android:text="Add more property" />
+
+</RelativeLayout>
